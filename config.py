@@ -90,7 +90,7 @@ class UnixConfig(ProductionConfig):
     def init_app(cls, app):
         ProductionConfig.init_app(app)
 
-        # log to syslog
+
         import logging
         from logging.handlers import SysLogHandler
         syslog_handler = SysLogHandler()
